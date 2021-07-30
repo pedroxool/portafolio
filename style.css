@@ -382,8 +382,12 @@ section .title::after{
 }
 .box a:hover {
     /* color:tomato !important; */
-
-    background: var(--Azul) !important;
+    display: inline-block !important;
+    padding: 10px 30px;
+    margin-top: 0px;
+ 
+    border: 2px white solid !important;
+    background: none !important;
     color: white !important;
 }
 .box .circlechart{
