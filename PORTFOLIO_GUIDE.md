@@ -16,7 +16,42 @@ Se ha creado una sección moderna e innovadora para mostrar tus proyectos con la
 - **Badges de Estado**: Indicadores visuales para proyectos públicos (Live) o privados (Private)
 - **Tecnologías Destacadas**: Badges coloridos que muestran las tecnologías usadas en cada proyecto
 - **Modal de Detalles**: Click en "Details" para ver información completa del proyecto
+- **Galería de Screenshots**: Soporte para mostrar capturas de pantalla en el modal con vista fullscreen
 - **Diseño Responsive**: Totalmente adaptable a dispositivos móviles
+
+## Cómo Agregar Screenshots a un Proyecto
+
+### Paso 1: Preparar las Imágenes
+1. Coloca tus capturas de pantalla en la carpeta `images/` (o crea una subcarpeta como `images/volksureste/`)
+2. Tamaño recomendado: 1920x1080px o 1280x720px
+3. Formato: JPG o PNG optimizado (< 500KB cada una)
+4. Nombra tus archivos descriptivamente: `home.jpg`, `cart.jpg`, `admin-dashboard.jpg`, etc.
+
+### Paso 2: Configurar las Imágenes en el Proyecto
+
+En `script.js`, dentro del objeto del proyecto, agrega el array `images`:
+
+```javascript
+'volksureste': {
+    title: 'Volksureste E-commerce System',
+    // ... otras propiedades ...
+    images: [
+        'images/volksureste/home.jpg',
+        'images/volksureste/cart.jpg',
+        'images/volksureste/checkout.jpg',
+        'images/volksureste/admin-dashboard.jpg',
+        'images/volksureste/pos-system.jpg'
+    ],
+    // ... resto de propiedades ...
+}
+```
+
+### Paso 3: Funcionamiento de la Galería
+- Las imágenes aparecerán automáticamente en el modal de detalles
+- Se mostrarán en una cuadrícula responsive
+- Hover: El borde se ilumina en color azul corporativo
+- Click: La imagen se abre en pantalla completa con fondo negro
+- Click en fullscreen: Cierra la vista fullscreen
 
 ## Cómo Personalizar tus Proyectos
 

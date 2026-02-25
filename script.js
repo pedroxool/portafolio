@@ -205,73 +205,54 @@ const projectData = {
         role: 'Full Stack Web Developer',
         year: '2021 - 2022'
     },
-    'vue-dashboard': {
-        title: 'Modern Dashboard Application',
-        type: 'Frontend Application',
-        description: 'Modern, reactive dashboard built with Vue.js for real-time data visualization and management.',
-        longDescription: 'Currently working as Frontend Developer at Grupo CSI - Buzzword, I develop modern web applications using Vue.js framework. This dashboard project showcases real-time data visualization, interactive charts, and a responsive interface for business intelligence.',
-        technologies: ['Vue.js', 'JavaScript', 'HTML5', 'CSS3', 'Chart.js', 'Vuex', 'Vue Router'],
-        features: [
-            'Real-time data updates',
-            'Interactive charts and graphs',
-            'Responsive dashboard layout',
-            'User authentication and authorization',
-            'Data filtering and search',
-            'Export functionality (PDF, Excel)',
-            'Dark/Light theme switching',
-            'Customizable widgets',
-            'RESTful API integration',
-            'State management with Vuex'
+    'volksureste': {
+        title: 'Volksureste E-commerce System',
+        type: 'Full-Stack Multi-Platform Ecosystem',
+        description: 'Complete automotive parts e-commerce platform with multi-branch management, shopping cart, payment processing, and automated shipping calculations.',
+        longDescription: 'Full-stack e-commerce system for Volksureste, specializing in automotive parts sales. Built as a multi-repository ecosystem consisting of Frontend (Nuxt.js), Laravel API, Admin Panel (Vue.js), and POS System (Vue.js with Ant Design). Features comprehensive multi-branch inventory management, real-time stock tracking, advanced shopping cart with discount coupons, multiple payment gateway integration (PayPal, OpenPay), and automated shipping calculations with major carriers including in-store pickup options. Implements robust authentication with granular role-based permissions (profiles, menus, actions), user panel with order history, shipping/billing addresses, and order tracking. The catalog is organized by categories, brands, sections, and groups with powerful search capabilities.',
+        technologies: ['Laravel', 'Nuxt.js 2.15.3', 'Vue.js 2', 'PHP', 'MySQL', 'Vuex', 'Vue Router', 'Bootstrap 4', 'Laravel Mix', 'Laravel Passport (OAuth2)', 'API RESTful', 'PayPal API', 'OpenPay', 'Google Maps API', 'reCAPTCHA', 'Ant Design', 'SweetAlert2'],
+        components: [
+            'E-commerce Frontend: Nuxt.js 2.15.3 SPA with server-side rendering',
+            'Laravel API: RESTful backend with Laravel Passport OAuth2',
+            'Admin Panel: Vue.js dashboard with comprehensive management tools',
+            'POS System: Vue.js point of sale with Ant Design',
+            'Multi-Branch Management: Real-time inventory across locations',
+            'Payment Gateway Integration: PayPal, OpenPay, credit cards',
+            'Shipping System: DIDI Envíos and multiple carrier integration'
         ],
-        status: 'Private - Under Development',
-        role: 'Frontend Vue Developer',
-        year: '2024 - Present'
-    },
-    'laravel-api': {
-        title: 'RESTful API with Laravel',
-        type: 'Backend API',
-        description: 'Robust and scalable RESTful API built with Laravel framework for mobile and web applications.',
-        longDescription: 'This project demonstrates expertise in building secure and efficient backend APIs using Laravel. The API provides authentication, data management, and serves as the backbone for multiple frontend applications.',
-        technologies: ['Laravel', 'PHP', 'MySQL', 'JWT', 'API REST', 'Postman'],
         features: [
-            'RESTful API architecture',
-            'JWT authentication',
-            'Role-based access control',
-            'Data validation and sanitization',
-            'API versioning',
-            'Rate limiting',
-            'Comprehensive error handling',
-            'Database migrations and seeders',
-            'API documentation',
-            'Unit and feature testing'
+            'Shopping cart with discount coupons and local persistence',
+            'Multi-branch inventory management with real-time stock',
+            'Multiple payment methods (PayPal, OpenPay, credit cards)',
+            'Automated shipping calculation and in-store pickup',
+            'Granular authentication system with roles and permissions',
+            'User panel with order history and address management',
+            'Order tracking and delivery status',
+            'Organized catalog (categories, brands, sections, groups)',
+            'Advanced search and filtering system',
+            'Notification system with SweetAlert2',
+            'Google Maps integration for store locations',
+            'reCAPTCHA security integration',
+            'Responsive design across all platforms',
+            'SEO optimized pages'
         ],
-        status: 'Private - Production Ready',
-        role: 'Backend Developer',
-        year: '2023'
-    },
-    'ecommerce': {
-        title: 'Custom E-commerce Platform',
-        type: 'E-commerce Solution',
-        description: 'Custom-built e-commerce platform with payment gateway integration and comprehensive inventory management.',
-        longDescription: 'A complete e-commerce solution built from scratch, featuring a user-friendly shopping experience, secure payment processing, and powerful administrative tools for store management.',
-        technologies: ['PHP', 'MySQL', 'JavaScript', 'PayPal API', 'Stripe', 'HTML5', 'CSS3', 'Bootstrap'],
-        features: [
-            'Product catalog management',
-            'Shopping cart functionality',
-            'Multiple payment gateway support',
-            'Order management system',
-            'Inventory tracking',
-            'Customer accounts and order history',
-            'Discount and coupon system',
-            'Email notifications',
-            'Sales reporting and analytics',
-            'Responsive design',
-            'SSL security implementation',
-            'SEO optimized product pages'
+        images: [
+            'images/volksureste/home.jpg',
+            'images/volksureste/catalog.jpg',
+            'images/volksureste/product-detail.jpg',
+            'images/volksureste/cart.jpg',
+            'images/volksureste/checkout.jpg',
+            'images/volksureste/checkout2.jpg',
+            'images/volksureste/payment.jpg',
+            'images/volksureste/admin-dashboard.jpg',
+            'images/volksureste/admin-inventory.jpg',
+            'images/volksureste/pos-system.jpg',
+            'images/volksureste/pos2.jpg',
         ],
-        status: 'Private - In Production',
+        url: 'https://volksureste.com',
+        status: 'Live & Public',
         role: 'Full Stack Developer',
-        year: '2022'
+        year: '2023 - 2024'
     }
 };
 
@@ -284,7 +265,21 @@ function openProjectModal(projectId) {
             <h3>Project Overview</h3>
             <p>${project.longDescription}</p>
         </div>
-        
+    `;
+    
+    // Add screenshots section if images exist
+    if (project.images && project.images.length > 0) {
+        scrollContent += `
+            <div class="modal-section">
+                <h3>Screenshots</h3>
+                <div class="modal-images">
+                    ${project.images.map(img => `<img src="${img}" alt="${project.title} screenshot" onclick="viewImageFullscreen('${img}')">`).join('')}
+                </div>
+            </div>
+        `;
+    }
+    
+    scrollContent += `
         <div class="modal-section">
             <h3>Technologies Used</h3>
             <div class="tech-stack">
@@ -324,6 +319,41 @@ function openProjectModal(projectId) {
     
     document.getElementById('modalBody').innerHTML = modalContent;
     document.getElementById('projectModal').style.display = 'block';
+}
+
+// Function to view image in fullscreen
+function viewImageFullscreen(imageSrc) {
+    const overlay = document.createElement('div');
+    overlay.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: zoom-out;
+    `;
+    
+    const img = document.createElement('img');
+    img.src = imageSrc;
+    img.style.cssText = `
+        max-width: 95%;
+        max-height: 95%;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: 0 0 50px rgba(0, 163, 224, 0.5);
+    `;
+    
+    overlay.appendChild(img);
+    document.body.appendChild(overlay);
+    
+    overlay.onclick = function() {
+        document.body.removeChild(overlay);
+    };
 }
 
 // Close modal functionality
