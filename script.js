@@ -1,3 +1,285 @@
+// Translations object
+const translations = {
+    es: {
+        // Menu
+        menu_home: "Inicio",
+        menu_about: "Acerca de",
+        menu_skills: "Habilidades",
+        menu_services: "Servicios",
+        menu_portfolio: "Portafolio",
+        menu_contact: "Contacto",
+        
+        // Home section
+        home_greeting: "Hola, mi nombre es",
+        home_subtitle: "Y soy",
+        home_hire: "Contrátame",
+        
+        // About section
+        about_title: "Acerca de mí",
+        about_intro: "Soy Pedro Xool y soy",
+        
+        // Skills section
+        skills_title: "Mis Habilidades",
+        
+        // Services section
+        services_title: "Mis Servicios",
+        service_webdesign_title: "Diseño Web",
+        service_webdesign_desc1: "Diseño de Sitio web, desde",
+        service_webdesign_desc2: "wireframe | mockup | prototipo",
+        service_webdesign_desc3: "hasta maquetación de Sitio Web Responsive.",
+        service_webdesign_desc4: "Optimización y desarrollo de sitio web, desde cero y a la medida con HTML 5 | CSS | JS | PHP | ENTRE OTROS.",
+        service_logar_title: "Sitio Web Responsive",
+        service_logar_desc: "Se realiza maquetación de sitio web, a la medida, optimizando recursos, desarrollado con",
+        service_logar_link: "Ver Sitio Web",
+        service_apps_title: "Diseño de Apps",
+        service_apps_desc1: "Desarrollo de aplicaciones web, inventarios, punto de ventas, sistemas de comentarios, notificaciones, comandas, etc.",
+        service_apps_desc2: "Tecnologías como PHP | LARAVEL | JS | AJAX| JSON | MYSQL | API REST | VUE.JS | ENTRE OTROS.",
+        
+        // Portfolio section
+        portfolio_title: "Mi Portafolio",
+        portfolio_all: "Todo",
+        portfolio_ecommerce: "E-commerce",
+        portfolio_web: "Aplicaciones Web",
+        portfolio_api: "APIs y Backend",
+        portfolio_fullstack: "Full Stack",
+        
+        // Contact section
+        contact_title: "Contáctame",
+        contact_get_in_touch: "Ponte en Contacto",
+        contact_name: "Nombre",
+        contact_address: "Dirección",
+        contact_email: "Email",
+        contact_whatsapp: "WhatsApp",
+        contact_message_me: "Envíame un Mensaje",
+        contact_form_name: "Nombre y Apellido",
+        contact_form_email: "email@dominio.com",
+        contact_form_subject: "Asunto",
+        contact_form_message: "Mensaje",
+        contact_send: "Enviar por WhatsApp",
+        
+        // Footer
+        footer_created: "Creado por",
+        footer_rights: "Todos los derechos reservados.",
+        
+        // Typing animation
+        typing_teacher: "Profesor",
+        typing_developer: "Desarrollador",
+        typing_leader: "Líder",
+        typing_designer: "Diseñador",
+        typing_freelancer: "Freelancer",
+        
+        // Portfolio cards
+        portfolio_private: "Privado",
+        portfolio_live: "En Vivo",
+        portfolio_active: "Activo",
+        portfolio_details: "Detalles",
+        portfolio_view_live: "Ver Sitio",
+        portfolio_visit: "Visitar",
+        
+        // Modal
+        modal_overview: "Descripción del Proyecto",
+        modal_screenshots: "Capturas de Pantalla",
+        modal_technologies: "Tecnologías Utilizadas",
+        modal_components: "Componentes del Proyecto",
+        modal_features: "Características Principales",
+        modal_visit: "Visitar Sitio Web",
+        modal_role: "Rol",
+        modal_year: "Año",
+        modal_status: "Estado"
+    },
+    en: {
+        // Menu
+        menu_home: "Home",
+        menu_about: "About",
+        menu_skills: "Skills",
+        menu_services: "Services",
+        menu_portfolio: "Portfolio",
+        menu_contact: "Contact",
+        
+        // Home section
+        home_greeting: "Hello, my name is",
+        home_subtitle: "And I'm",
+        home_hire: "Hire me",
+        
+        // About section
+        about_title: "About me",
+        about_intro: "I'm Pedro Xool and I'm",
+        
+        // Skills section
+        skills_title: "My Skills",
+        
+        // Services section
+        services_title: "My Services",
+        service_webdesign_title: "Web Design",
+        service_webdesign_desc1: "Website design, from",
+        service_webdesign_desc2: "wireframe | mockup | prototype",
+        service_webdesign_desc3: "to Responsive Website layout.",
+        service_webdesign_desc4: "Optimization and website development, from scratch and customized with HTML 5 | CSS | JS | PHP | AMONG OTHERS.",
+        service_logar_title: "Responsive Website",
+        service_logar_desc: "Website layout is carried out, customized, optimizing resources, developed with",
+        service_logar_link: "View Website",
+        service_apps_title: "Apps Design",
+        service_apps_desc1: "Development of web applications, inventories, point of sale, comment systems, notifications, orders, etc.",
+        service_apps_desc2: "Technologies such as PHP | LARAVEL | JS | AJAX| JSON | MYSQL | API REST | VUE.JS | AMONG OTHERS.",
+        
+        // Portfolio section
+        portfolio_title: "My Portfolio",
+        portfolio_all: "All",
+        portfolio_ecommerce: "E-commerce",
+        portfolio_web: "Web Apps",
+        portfolio_api: "APIs & Backend",
+        portfolio_fullstack: "Full Stack",
+        
+        // Contact section
+        contact_title: "Contact me",
+        contact_get_in_touch: "Get in Touch",
+        contact_name: "Name",
+        contact_address: "Address",
+        contact_email: "Email",
+        contact_whatsapp: "WhatsApp",
+        contact_message_me: "Message me",
+        contact_form_name: "First and Last",
+        contact_form_email: "email@domain.tld",
+        contact_form_subject: "Subject",
+        contact_form_message: "Message",
+        contact_send: "Send via WhatsApp",
+        
+        // Footer
+        footer_created: "Created By",
+        footer_rights: "All rights reserved.",
+        
+        // Typing animation
+        typing_teacher: "Teacher",
+        typing_developer: "Developer",
+        typing_leader: "Leader",
+        typing_designer: "Designer",
+        typing_freelancer: "Freelancer",
+        
+        // Portfolio cards
+        portfolio_private: "Private",
+        portfolio_live: "Live",
+        portfolio_active: "Active",
+        portfolio_details: "Details",
+        portfolio_view_live: "View Live",
+        portfolio_visit: "Visit",
+        
+        // Modal
+        modal_overview: "Project Overview",
+        modal_screenshots: "Screenshots",
+        modal_technologies: "Technologies Used",
+        modal_components: "Project Components",
+        modal_features: "Key Features",
+        modal_visit: "Visit Website",
+        modal_role: "Role",
+        modal_year: "Year",
+        modal_status: "Status"
+    }
+};
+
+// Get current language from localStorage or default to 'es'
+let currentLanguage = localStorage.getItem('language') || 'es';
+
+// Function to change language
+function changeLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+    
+    // Update all elements with data-translate attribute
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[lang] && translations[lang][key]) {
+            // Check if element is input or textarea
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = translations[lang][key];
+            } else {
+                // Preserve inner HTML for elements with typing animation
+                if (element.classList.contains('typing') || element.classList.contains('typing-2')) {
+                    // Don't update, Typed.js handles this
+                } else if (element.querySelector('.typing') || element.querySelector('.typing-2')) {
+                    // Update only the text node before the typing span
+                    const typingSpan = element.querySelector('.typing') || element.querySelector('.typing-2');
+                    // Clear all text nodes and set the new text
+                    Array.from(element.childNodes).forEach(node => {
+                        if (node.nodeType === 3) { // Text node
+                            node.remove();
+                        }
+                    });
+                    // Insert the translated text as a text node before the typing span
+                    const textNode = document.createTextNode(translations[lang][key] + ' ');
+                    element.insertBefore(textNode, typingSpan);
+                } else {
+                    element.textContent = translations[lang][key];
+                }
+            }
+        }
+    });
+    
+    // Update typing animation strings
+    updateTypingAnimation(lang);
+    
+    // Update project cards
+    updateProjectCards(lang);
+}
+
+// Function to update project cards
+function updateProjectCards(lang) {
+    document.querySelectorAll('.portfolio-item').forEach(card => {
+        const projectId = card.getAttribute('data-project-id');
+        if (projectId && projectDataTranslations[projectId]) {
+            const translation = projectDataTranslations[projectId][lang];
+            
+            const titleEl = card.querySelector('.project-title');
+            const typeEl = card.querySelector('.project-type');
+            const descEl = card.querySelector('.project-description');
+            
+            if (titleEl) titleEl.textContent = translation.title;
+            if (typeEl) typeEl.textContent = translation.type;
+            if (descEl) descEl.textContent = translation.description;
+        }
+    });
+}
+
+// Function to update typing animation
+function updateTypingAnimation(lang) {
+    const typingStrings = [
+        translations[lang].typing_teacher,
+        translations[lang].typing_developer,
+        translations[lang].typing_leader,
+        translations[lang].typing_designer,
+        translations[lang].typing_freelancer
+    ];
+    
+    // Destroy existing Typed instances and create new ones
+    if (window.typed1) window.typed1.destroy();
+    if (window.typed2) window.typed2.destroy();
+    
+    window.typed1 = new Typed(".typing", {
+        strings: typingStrings,
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    window.typed2 = new Typed(".typing-2", {
+        strings: typingStrings,
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+}
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Set language select value
+    const langSelect = document.getElementById('language-select');
+    if (langSelect) {
+        langSelect.value = currentLanguage;
+    }
+    
+    // Apply translations
+    changeLanguage(currentLanguage);
+});
+
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
@@ -34,15 +316,15 @@ $(document).ready(function(){
     });
 
     // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Teacher", "Developer", "Leader", "Designer", "Freelancer"],
+    window.typed1 = new Typed(".typing", {
+        strings: ["Profesor", "Desarrollador", "Líder", "Diseñador", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Teacher", "Developer", "Leader", "Designer", "Freelancer"],
+    window.typed2 = new Typed(".typing-2", {
+        strings: ["Profesor", "Desarrollador", "Líder", "Diseñador", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -94,6 +376,173 @@ $(document).ready(function(){
 });
 
 // Portfolio Modal functionality
+
+// Project translations
+const projectDataTranslations = {
+    'isi-suite': {
+        es: {
+            title: 'ISI SURESTE - Suite E-commerce',
+            type: 'Ecosistema Multi-Proyecto',
+            description: 'Solución integral de comercio electrónico con 5 tiendas en línea, panel administrativo, API REST, sistema POS. Gestión de servidor VPS CentOS Linux y análisis de requerimientos.',
+            longDescription: 'Como Web Master en ISI SURESTE, fui responsable de gestionar y administrar un entorno de VPS Hosting ejecutándose en CentOS Linux, supervisando 11 sitios web incluyendo 5 plataformas completas de comercio electrónico. Este ecosistema fue construido desde cero para proporcionar una solución unificada para gestión de productos, control de inventario, procesamiento de ventas y gestión de relaciones con clientes a través de múltiples canales. Mi rol incluía administración de servidores, recopilación de requisitos con stakeholders y optimización continua de la plataforma.',
+            status: 'Privado - Seguridad Restringida',
+            role: 'Web Master y Desarrollador Full Stack'
+        },
+        en: {
+            title: 'ISI SURESTE - E-commerce Suite',
+            type: 'Multi-Project Ecosystem',
+            description: 'Complete e-commerce solution with 5 online stores, admin panel, API REST, POS system. Managed VPS CentOS Linux server and requirements analysis.',
+            longDescription: 'As Web Master at ISI SURESTE, I was responsible for managing and administering a VPS Hosting environment running on CentOS Linux, overseeing 11 websites including 5 complete e-commerce platforms. This ecosystem was built from scratch to provide a unified solution for product management, inventory control, sales processing, and customer relationship management across multiple channels. My role included server administration, requirements gathering with stakeholders, and continuous platform optimization.',
+            status: 'Private - Security Restricted',
+            role: 'Web Master & Full Stack Developer'
+        }
+    },
+    'logar': {
+        es: {
+            title: 'Constructores Logar S.A. de C.V.',
+            type: 'Sitio Web Corporativo y Sistemas Internos',
+            description: 'Sitio web corporativo profesional y sistema integral de gestión interna para empresa constructora líder en Yucatán, México.',
+            longDescription: 'Durante mi tiempo como Líder del Departamento de TI en Constructores Logar, diseñé y desarrollé su sitio web corporativo desde cero, junto con un sistema completo de gestión interna de proyectos para prospección y seguimiento de proyectos de construcción. Además, gestioné la infraestructura de TI de la empresa, incluyendo administración de redes, mantenimiento de equipos de cómputo y soporte técnico para todos los departamentos.',
+            status: 'En Vivo y Público',
+            role: 'Líder del Departamento de TI y Desarrollador Web'
+        },
+        en: {
+            title: 'Constructores Logar S.A. de C.V.',
+            type: 'Corporate Website & Internal Systems',
+            description: 'Professional corporate website and comprehensive internal management system for a leading construction company in Yucatán, Mexico.',
+            longDescription: 'During my time as IT Department Leader at Constructores Logar, I designed and developed their corporate website from scratch, along with a complete internal project management system for prospecting and tracking construction projects. Additionally, I managed the company\'s IT infrastructure, including network administration, computer equipment maintenance, and technical support for all departments.',
+            status: 'Live & Public',
+            role: 'IT Department Leader & Web Developer'
+        }
+    },
+    'softrek': {
+        es: {
+            title: 'SOFTREK Plataforma de Turismo y Telecomunicaciones',
+            type: 'Aplicación Web y Sistemas en Tiempo Real',
+            description: 'Plataforma integral para la industria turística que incluye sistema Call In VoIP y buscador mundial de aeropuertos.',
+            longDescription: 'Como Desarrollador Full Stack en SOFTREK, desarrollé múltiples sistemas sofisticados incluyendo una plataforma de reservas turísticas, Call In - un sistema de telecomunicaciones VoIP en tiempo real usando Websockets, SIP e integración con FreePBX, y un motor de búsqueda mundial de aeropuertos altamente optimizado. El proyecto Call In permite gestión de telefonía en tiempo real con tecnología VoIP, mientras que el motor de búsqueda de aeropuertos proporciona capacidades de búsqueda completas por código IATA, país, ciudad y nombre de aeropuerto, optimizado para velocidad y precisión.',
+            status: 'Privado - Confidencial del Cliente',
+            role: 'Desarrollador Web Full Stack'
+        },
+        en: {
+            title: 'SOFTREK Tourism & Telecommunications Platform',
+            type: 'Web Application & Real-Time Systems',
+            description: 'Comprehensive platform for tourism industry including Call In VoIP system and worldwide airport search engine.',
+            longDescription: 'As a Full Stack Developer at SOFTREK, I developed multiple sophisticated systems including a tourism booking platform, Call In - a real-time VoIP telecommunications system using Websockets, SIP, and FreePBX integration, and a highly optimized worldwide airport search engine. The Call In project enables real-time telephony management with VoIP technology, while the airport search engine provides comprehensive search capabilities by IATA code, country, city, and airport name, optimized for speed and accuracy.',
+            status: 'Private - Client Confidential',
+            role: 'Full Stack Web Developer'
+        }
+    },
+    'volksureste': {
+        es: {
+            title: 'Sistema E-commerce Volksureste',
+            type: 'Ecosistema Multi-Plataforma Full-Stack',
+            description: 'Plataforma completa de comercio electrónico de refacciones automotrices con gestión multi-sucursal, carrito de compras, procesamiento de pagos y cálculo automatizado de envíos.',
+            longDescription: 'Sistema e-commerce full-stack para Volksureste, especializado en venta de refacciones automotrices. Construido como un ecosistema multi-repositorio que consiste en Frontend (Nuxt.js), Laravel API, Panel Admin (Vue.js), y Sistema POS (Vue.js con Ant Design). Cuenta con gestión integral de inventario multi-sucursal, seguimiento de stock en tiempo real, carrito de compras avanzado con cupones de descuento, integración de múltiples pasarelas de pago (PayPal, OpenPay), y cálculo automatizado de envíos con principales transportistas incluyendo opciones de recolección en tienda. Implementa autenticación robusta con permisos granulares basados en roles (perfiles, menús, acciones), panel de usuario con historial de pedidos, direcciones de envío/facturación y seguimiento de pedidos. El catálogo está organizado por categorías, marcas, secciones y grupos con potentes capacidades de búsqueda.',
+            status: 'En Vivo y Público',
+            role: 'Desarrollador Full Stack'
+        },
+        en: {
+            title: 'Volksureste E-commerce System',
+            type: 'Full-Stack Multi-Platform Ecosystem',
+            description: 'Complete automotive parts e-commerce platform with multi-branch management, shopping cart, payment processing, and automated shipping calculations.',
+            longDescription: 'Full-stack e-commerce system for Volksureste, specializing in automotive parts sales. Built as a multi-repository ecosystem consisting of Frontend (Nuxt.js), Laravel API, Admin Panel (Vue.js), and POS System (Vue.js with Ant Design). Features comprehensive multi-branch inventory management, real-time stock tracking, advanced shopping cart with discount coupons, multiple payment gateway integration (PayPal, OpenPay), and automated shipping calculations with major carriers including in-store pickup options. Implements robust authentication with granular role-based permissions (profiles, menus, actions), user panel with order history, shipping/billing addresses, and order tracking. The catalog is organized by categories, brands, sections, and groups with powerful search capabilities.',
+            status: 'Live & Public',
+            role: 'Full Stack Developer'
+        }
+    },
+    'violetera': {
+        es: {
+            title: 'Sistema POS para Restaurantes - Violetera',
+            type: 'Sistema de Gestión para Restaurantes Multi-Dispositivo',
+            description: 'Sistema de punto de venta completo para gestión de restaurantes desarrollado como aplicación web responsiva. Incluye módulos de comandera digital con asignación de mesas, gestión de órdenes en tiempo real, control de caja, catálogo de productos, sistema de usuarios con roles, y dashboard analítico con métricas de ventas.',
+            longDescription: 'Sistema POS integral diseñado específicamente para la industria restaurantera, implementado como una aplicación web responsiva multi-dispositivo. El sistema permite la gestión completa de un restaurante desde diferentes interfaces optimizadas por rol: comandera digital para meseros con asignación de mesas en tiempo real, módulo de caja para control de apertura/cierre de turno y procesamiento de pagos, panel de cocina para visualización de comandas en proceso, y dashboard administrativo con métricas avanzadas. Implementa actualización automática mediante polling para sincronización en tiempo real de órdenes, autenticación segura basada en tokens con Laravel Sanctum, gestión completa de catálogo de productos/bebidas/complementos con manejo de imágenes, sistema de roles granular (meseros, cajeros, cocina, administradores), generación de reportes de ventas por período, y visualización de datos con gráficos interactivos usando ApexCharts.',
+            status: 'Privado - En Producción',
+            role: 'Desarrollador Full Stack'
+        },
+        en: {
+            title: 'Restaurant POS System - Violetera',
+            type: 'Multi-Device Restaurant Management System',
+            description: 'Complete point of sale system for restaurant management developed as a responsive web application. Includes digital waiter pad modules with table assignment, real-time order management, cash control, product catalog, user role system, and analytical dashboard with sales metrics.',
+            longDescription: 'Comprehensive POS system designed specifically for the restaurant industry, implemented as a multi-device responsive web application. The system enables complete restaurant management from different role-optimized interfaces: digital waiter pad for servers with real-time table assignment, cash module for shift opening/closing control and payment processing, kitchen panel for viewing in-process orders, and administrative dashboard with advanced metrics. Implements automatic updates via polling for real-time order synchronization, secure token-based authentication with Laravel Sanctum, complete product/beverage/add-on catalog management with image handling, granular role system (waiters, cashiers, kitchen, administrators), sales report generation by period, and data visualization with interactive charts using ApexCharts.',
+            status: 'Private - In Production',
+            role: 'Full Stack Developer'
+        }
+    },
+    'smartelife': {
+        es: {
+            title: 'Smart-e Life | Sistema MLM/POS',
+            type: 'Plataforma de Marketing Multinivel y Punto de Venta',
+            description: 'Plataforma integral de Marketing Multinivel y Punto de Venta para empresa de suplementos alimenticios por suscripción. Red piramidal de 6 niveles con cálculo automático de comisiones, portal de socios con visualización de árbol genealógico, sistema POS multicaja, y gestión de promociones inteligentes.',
+            longDescription: 'Plataforma completa para gestión de red de Marketing Multinivel combinada con sistema POS para ventas directas. El sistema administra una estructura piramidal de 6 niveles con cálculo automático de comisiones basado en calificaciones mensuales. Incluye portal personalizado para socios donde pueden visualizar su árbol genealógico completo mediante visualización interactiva D3.js, comisiones desglosadas por nivel, red de referidos (upline/downline), y estado de calificación mensual. Integra módulo POS robusto para ventas directas con gestión de inventario de suplementos, control multi-caja con apertura/cierre de turno, procesamiento de múltiples métodos de pago (efectivo, tarjetas de crédito, cheques posdatados), sistema inteligente de promociones mensuales con asignación automática de regalos por volumen de compra, y reportes detallados de comisiones diarias/mensuales.',
+            status: 'Privado - En Producción',
+            role: 'Desarrollador Full Stack'
+        },
+        en: {
+            title: 'Smart-e Life | MLM/POS System',
+            type: 'Multi-Level Marketing & Point of Sale Platform',
+            description: 'Comprehensive Multi-Level Marketing and Point of Sale platform for subscription-based supplement company. 6-level pyramid network with automatic commission calculation, partner portal with genealogy tree visualization, multi-cash POS system, and smart promotion management.',
+            longDescription: 'Complete platform for Multi-Level Marketing network management combined with POS system for direct sales. The system manages a 6-level pyramid structure with automatic commission calculation based on monthly qualifications. Includes personalized partner portal where they can visualize their complete genealogy tree through D3.js interactive visualization, commissions broken down by level, referral network (upline/downline), and monthly qualification status. Integrates robust POS module for direct sales with supplement inventory management, multi-cash control with shift opening/closing, processing of multiple payment methods (cash, credit cards, post-dated checks), smart monthly promotion system with automatic gift assignment by purchase volume, and detailed daily/monthly commission reports.',
+            status: 'Private - In Production',
+            role: 'Full Stack Developer'
+        }
+    },
+    'llantamax': {
+        es: {
+            title: 'Sistema de Gestión e Inventario - Llantamax',
+            type: 'Sistema POS y de Gestión de Inventario Multi-Sucursal',
+            description: 'Sistema web de punto de venta y control de inventario desarrollado para cadena de llanteras con gestión multi-sucursal. Control de stock en tiempo real, ajustes de inventario con historial, gestión de órdenes de venta, módulo de caja, y administración de usuarios con roles por organización.',
+            longDescription: 'Sistema POS completo desarrollado específicamente para la gestión de cadena de llanteras con múltiples sucursales. Implementa punto de venta de mostrador con búsqueda y escaneo de productos especializados (llantas con atributos como tamaño, lona, grupo, sección). Control de inventario en tiempo real multi-sucursal con sistema robusto de ajustes (entradas, salidas, movimientos, mermas) con historial detallado y trazabilidad completa. Módulo de caja con apertura/cierre de turno y control de efectivo, sistema de ventas tanto para clientes registrados como público general con gestión de pagos múltiples (contado, crédito, diferido). Reportería completa de ventas por día y mes con filtros avanzados, tickets de venta con opción de reimpresión, control de costos de envío y productos de demostración.',
+            status: 'Privado - En Producción',
+            role: 'Desarrollador Full Stack'
+        },
+        en: {
+            title: 'Management & Inventory System - Llantamax',
+            type: 'Multi-Branch POS & Inventory Management System',
+            description: 'Web-based point of sale and inventory control system developed for tire shop chain with multi-branch management. Real-time stock control, inventory adjustments with history, sales order management, cash module, and user administration with organizational roles.',
+            longDescription: 'Complete POS system developed specifically for tire shop chain management with multiple branches. Implements counter point of sale with specialized product search and scanning (tires with attributes such as size, ply, group, section). Real-time multi-branch inventory control with robust adjustment system (entries, exits, movements, shrinkage) with detailed history and complete traceability. Cash module with shift opening/closing and cash control, sales system for both registered customers and general public with multiple payment management (cash, credit, deferred). Complete sales reporting by day and month with advanced filters, sale tickets with reprint option, shipping cost control and demonstration products.',
+            status: 'Private - In Production',
+            role: 'Full Stack Developer'
+        }
+    },
+    'fitlife': {
+        es: {
+            title: 'FitLife - Sistema de Gestión de Gimnasios',
+            type: 'Plataforma de Gestión de Gimnasios Full-Stack',
+            description: 'Sistema web full-stack de gestión administrativa y operativa para gimnasios con portal para clientes y panel administrativo completo. Integración de pagos en línea con OpenPay, notificaciones en tiempo real mediante WebSockets, y correos automáticos transaccionales.',
+            longDescription: 'Plataforma completa para la administración integral de gimnasios con portal personalizado para clientes donde pueden gestionar su perfil, visualizar suscripciones activas e historial, procesar pagos y renovaciones mediante OpenPay, consultar estado de transacciones, y recibir notificaciones en tiempo real de cambios de status. El panel administrativo incluye dashboard con estadísticas y métricas del negocio, gestión completa de clientes con filtros avanzados y búsqueda, administración de suscripciones y planes, historial de pagos y transacciones por cliente, sistema de notificaciones push en tiempo real, y gestión de webhooks para procesamiento automático de pagos.',
+            status: 'En Vivo y Público',
+            role: 'Desarrollador Full Stack'
+        },
+        en: {
+            title: 'FitLife - Gym Management System',
+            type: 'Full-Stack Gym Management Platform',
+            description: 'Full-stack web administrative and operational management system for gyms with client portal and complete administrative panel. Online payment integration with OpenPay, real-time notifications via WebSockets, and automated transactional emails.',
+            longDescription: 'Complete platform for comprehensive gym administration with personalized client portal where they can manage their profile, view active subscriptions and history, process payments and renewals through OpenPay, check transaction status, and receive real-time status change notifications. The administrative panel includes dashboard with business statistics and metrics, complete client management with advanced filters and search, subscription and plan administration, payment history and transactions per client, real-time push notification system, and webhook management for automatic payment processing.',
+            status: 'Live & Public',
+            role: 'Full Stack Developer'
+        }
+    },
+    'hosting-services': {
+        es: {
+            title: 'Servicios de Hosting y Administración de Servidores',
+            type: 'Servicios de Hosting Web e Infraestructura',
+            description: 'Servicios profesionales de hosting web, renta de servidores VPS, registro y administración de dominios, configuración de correos corporativos, mantenimiento de servidores, y soporte técnico especializado para infraestructura web.',
+            longDescription: 'Ofrezco servicios integrales de infraestructura web para empresas y desarrolladores. Incluye hosting web compartido y VPS con alta disponibilidad, registro y administración completa de dominios (.com, .mx, .net, etc.), configuración y administración de correos corporativos profesionales con protección antispam y antivirus, administración y mantenimiento de servidores Linux (CentOS, Ubuntu), instalación y configuración de paneles de control (cPanel/WHM, Plesk), implementación de certificados SSL/TLS para seguridad, configuración de servidores web (Apache, Nginx), administración de bases de datos (MySQL, PostgreSQL), configuración de DNS y registros, sistemas de backup automatizados, monitoreo y optimización de rendimiento, migración de sitios web entre servidores, instalación de aplicaciones web (WordPress, Laravel, etc.), configuración de firewalls y seguridad del servidor, soporte técnico 24/7, y consultoría para arquitectura de infraestructura web.',
+            status: 'Servicios Activos',
+            role: 'Administrador de Sistemas y DevOps'
+        },
+        en: {
+            title: 'Web Hosting & Server Administration Services',
+            type: 'Web Hosting & Infrastructure Services',
+            description: 'Professional web hosting services, VPS server rental, domain registration and management, corporate email configuration, server maintenance, and specialized technical support for web infrastructure.',
+            longDescription: 'I offer comprehensive web infrastructure services for businesses and developers. Includes shared web hosting and VPS with high availability, complete domain registration and management (.com, .mx, .net, etc.), configuration and management of professional corporate emails with antispam and antivirus protection, Linux server administration and maintenance (CentOS, Ubuntu), installation and configuration of control panels (cPanel/WHM, Plesk), SSL/TLS certificate implementation for security, web server configuration (Apache, Nginx), database administration (MySQL, PostgreSQL), DNS and record configuration, automated backup systems, performance monitoring and optimization, website migration between servers, web application installation (WordPress, Laravel, etc.), firewall and server security configuration, 24/7 technical support, and consulting for web infrastructure architecture.',
+            status: 'Active Services',
+            role: 'System Administrator & DevOps'
+        }
+    }
+};
+
 const projectData = {
     'isi-suite': {
         title: 'ISI SURESTE - E-commerce Suite',
@@ -684,10 +1133,21 @@ function openProjectModal(projectId) {
     const project = projectData[projectId];
     if (!project) return;
     
+    const lang = currentLanguage;
+    const t = translations[lang];
+    
+    // Get translated data if available
+    const translatedData = projectDataTranslations[projectId] && projectDataTranslations[projectId][lang];
+    const projectTitle = translatedData ? translatedData.title : project.title;
+    const projectType = translatedData ? translatedData.type : project.type;
+    const projectLongDesc = translatedData ? translatedData.longDescription : project.longDescription;
+    const projectStatus = translatedData ? translatedData.status : project.status;
+    const projectRole = translatedData ? translatedData.role : project.role;
+    
     let scrollContent = `
         <div class="modal-section">
-            <h3>Project Overview</h3>
-            <p>${project.longDescription}</p>
+            <h3>${t.modal_overview}</h3>
+            <p>${projectLongDesc}</p>
         </div>
     `;
     
@@ -695,9 +1155,9 @@ function openProjectModal(projectId) {
     if (project.images && project.images.length > 0) {
         scrollContent += `
             <div class="modal-section">
-                <h3>Screenshots</h3>
+                <h3>${t.modal_screenshots}</h3>
                 <div class="modal-images">
-                    ${project.images.map(img => `<img src="${img}" alt="${project.title} screenshot" onclick="viewImageFullscreen('${img}')">`).join('')}
+                    ${project.images.map(img => `<img src="${img}" alt="${projectTitle} screenshot" onclick="viewImageFullscreen('${img}')">`).join('')}
                 </div>
             </div>
         `;
@@ -705,14 +1165,14 @@ function openProjectModal(projectId) {
     
     scrollContent += `
         <div class="modal-section">
-            <h3>Technologies Used</h3>
+            <h3>${t.modal_technologies}</h3>
             <div class="tech-stack">
                 ${project.technologies.map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
             </div>
         </div>
         
         <div class="modal-section">
-            <h3>${project.components ? 'Project Components' : 'Key Features'}</h3>
+            <h3>${project.components ? t.modal_components : t.modal_features}</h3>
             <ul>
                 ${(project.components || project.features).map(item => `<li>${item}</li>`).join('')}
             </ul>
@@ -723,7 +1183,7 @@ function openProjectModal(projectId) {
         scrollContent += `
             <div class="modal-section" style="text-align: center;">
                 <a href="${project.url}" target="_blank" class="btn-view" style="display: inline-block; margin-top: 10px;">
-                    <i class="fas fa-external-link-alt"></i> Visit Website
+                    <i class="fas fa-external-link-alt"></i> ${t.modal_visit}
                 </a>
             </div>
         `;
@@ -731,10 +1191,10 @@ function openProjectModal(projectId) {
     
     let modalContent = `
         <div class="modal-project-header">
-            <h2>${project.title}</h2>
-            <p class="project-type">${project.type}</p>
-            <p class="project-meta"><strong>Role:</strong> ${project.role} | <strong>Year:</strong> ${project.year}</p>
-            <p class="project-status"><strong>Status:</strong> ${project.status}</p>
+            <h2>${projectTitle}</h2>
+            <p class="project-type">${projectType}</p>
+            <p class="project-meta"><strong>${t.modal_role}:</strong> ${projectRole} | <strong>${t.modal_year}:</strong> ${project.year}</p>
+            <p class="project-status"><strong>${t.modal_status}:</strong> ${projectStatus}</p>
         </div>
         <div class="modal-content-scroll">
             ${scrollContent}

@@ -41,13 +41,19 @@
         <div class="max-width">
             <div class="logo"><a href="#">Portafo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#portfolio" class="menu-btn">Portfolio</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#home" class="menu-btn" data-translate="menu_home">Inicio</a></li>
+                <li><a href="#about" class="menu-btn" data-translate="menu_about">Acerca de</a></li>
+                <li><a href="#skills" class="menu-btn" data-translate="menu_skills">Habilidades</a></li>
+                <li><a href="#services" class="menu-btn" data-translate="menu_services">Servicios</a></li>
+                <li><a href="#portfolio" class="menu-btn" data-translate="menu_portfolio">Portafolio</a></li>
+                <li><a href="#contact" class="menu-btn" data-translate="menu_contact">Contacto</a></li>
             </ul>
+            <div class="language-selector">
+                <select id="language-select" onchange="changeLanguage(this.value)">
+                    <option value="es" selected>🇲🇽 ES</option>
+                    <option value="en">🇺🇸 EN</option>
+                </select>
+            </div>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
@@ -59,10 +65,10 @@
     <section class="home" id="home">
             <div class="max-width">
                 <div class="home-content">
-                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-1" data-translate="home_greeting">Hola, mi nombre es</div>
                     <div class="text-2">Pedro Xool</div>
-                    <div class="text-3">And I'm a <span class="typing"></span></div>
-                    <a href="#contact">Hire me</a>
+                    <div class="text-3" data-translate="home_subtitle">Y soy <span class="typing"></span></div>
+                    <a href="#contact" data-translate="home_hire">Contrátame</a>
                 </div>  
                  
             </div>
@@ -74,13 +80,13 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About me</h2>
+            <h2 class="title" data-translate="about_title">Acerca de mí</h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="images/perfil2.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Pedro Xool and I'm a <span class="typing-2"></span></div>
+                    <div class="text"><span data-translate="about_intro">Soy Pedro Xool y soy</span> <span class="typing-2"></span></div>
                     <p>
                         Ingeniero en Sistemas Computacionales egresado del <span style="font-weight: bold;">Instituto Tecnológico de Mérida</span>, 
                         con más de <span style="font-weight: bold;">6 años de experiencia</span> especializado en desarrollo web full-stack, 
@@ -130,7 +136,7 @@
       <!-- teams section start -->
       <section class="teams" id="skills">
         <div class="max-width">
-            <h2 class="title">My Skills</h2>
+            <h2 class="title" data-translate="skills_title">Mis Habilidades</h2>
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">                        
@@ -306,14 +312,14 @@
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My services</h2>
+            <h2 class="title" data-translate="services_title">Mis Servicios</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
-                        <div class="text">Web Design</div>
-                        <p> <span>Diseño de Sitio web, desde</span><br>  <span>wireframe | mockup | prototipo </span><br><span>hasta maquetación de Sitio Web Responsive.</span></p>
-                        <p>Optimización y desarrollo de sitio web, desde cero y a la medida con HTML 5 | CSS | JS | PHP | ENTRE OTROS.</p>
+                        <div class="text" data-translate="service_webdesign_title">Diseño Web</div>
+                        <p> <span data-translate="service_webdesign_desc1">Diseño de Sitio web, desde</span><br>  <span data-translate="service_webdesign_desc2">wireframe | mockup | prototipo </span><br><span data-translate="service_webdesign_desc3">hasta maquetación de Sitio Web Responsive.</span></p>
+                        <p data-translate="service_webdesign_desc4">Optimización y desarrollo de sitio web, desde cero y a la medida con HTML 5 | CSS | JS | PHP | ENTRE OTROS.</p>
                         
                         
                     </div>
@@ -322,17 +328,17 @@
                     <div class="box">
                         <img src="images/logar.png" alt="" style="justify-content: center; align-content: center;">
                         <!-- <i class="fas fa-chart-line"></i> -->
-                        <div class="text">Sitio Web Responsive</div>
-                        <p>Se realiza maquetación de sitio web, a la medida, optimizando recursos, desarrollado con <br><span>HTML5 | CSS | JS | PHP | BOOTSTRAP.</span> </p>
-                        <a class="link_portafolio" target="_blank" href="https://www.constructoreslogar.com">Ver Sitio Web</a>
+                        <div class="text" data-translate="service_logar_title">Sitio Web Responsive</div>
+                        <p><span data-translate="service_logar_desc">Se realiza maquetación de sitio web, a la medida, optimizando recursos, desarrollado con </span><br><span>HTML5 | CSS | JS | PHP | BOOTSTRAP.</span> </p>
+                        <a class="link_portafolio" target="_blank" href="https://www.constructoreslogar.com" data-translate="service_logar_link">Ver Sitio Web</a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code"></i>
-                        <div class="text">Apps Design</div>
-                        <p>Desarrollo de aplicaciones web, inventarios, punto de ventas, sistemas de comentarios, notificaciones, comandas, etc.</p>
-                        <p>Tecnologías como PHP | LARAVEL | JS | AJAX| JSON | MYSQL | API REST | VUE.JS | ENTRE OTROS. </p>
+                        <div class="text" data-translate="service_apps_title">Diseño de Apps</div>
+                        <p data-translate="service_apps_desc1">Desarrollo de aplicaciones web, inventarios, punto de ventas, sistemas de comentarios, notificaciones, comandas, etc.</p>
+                        <p data-translate="service_apps_desc2">Tecnologías como PHP | LARAVEL | JS | AJAX| JSON | MYSQL | API REST | VUE.JS | ENTRE OTROS. </p>
                     </div>
                 </div>
                </div>
@@ -343,30 +349,30 @@
     <!-- portfolio section start -->
     <section class="portfolio" id="portfolio">
         <div class="max-width">
-            <h2 class="title">My Portfolio</h2>
+            <h2 class="title" data-translate="portfolio_title">Mi Portafolio</h2>
             
             <!-- Filter buttons -->
             <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
-                <button class="filter-btn" data-filter="web">Web Apps</button>
-                <button class="filter-btn" data-filter="api">APIs & Backend</button>
-                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn active" data-filter="all" data-translate="portfolio_all">Todo</button>
+                <button class="filter-btn" data-filter="ecommerce" data-translate="portfolio_ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="web" data-translate="portfolio_web">Aplicaciones Web</button>
+                <button class="filter-btn" data-filter="api" data-translate="portfolio_api">APIs y Backend</button>
+                <button class="filter-btn" data-filter="fullstack" data-translate="portfolio_fullstack">Full Stack</button>
             </div>
 
             <!-- Portfolio Grid -->
             <div class="portfolio-grid">
                 
                 <!-- Project Suite Example - ISI SURESTE (Grouped Projects) -->
-                <div class="portfolio-item project-suite" data-category="ecommerce fullstack">
+                <div class="portfolio-item project-suite" data-category="ecommerce fullstack" data-project-id="isi-suite">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="images/technology-1283624_1920.jpg" alt="ISI SURESTE E-commerce Suite">
                             <div class="project-overlay">
-                                <div class="project-badge private">Private</div>
+                                <div class="project-badge private" data-translate="portfolio_private">Privado</div>
                                 <div class="project-links">
                                     <button class="btn-detail" onclick="openProjectModal('isi-suite')">
-                                        <i class="fas fa-info-circle"></i> Details
+                                        <i class="fas fa-info-circle"></i> <span data-translate="portfolio_details">Detalles</span>
                                     </button>
                                 </div>
                             </div>
@@ -401,18 +407,18 @@
                 </div>
 
                 <!-- Individual Project Example - Constructores Logar -->
-                <div class="portfolio-item" data-category="web fullstack">
+                <div class="portfolio-item" data-category="web fullstack" data-project-id="logar">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="images/logar.png" alt="Constructores Logar">
                             <div class="project-overlay">
-                                <div class="project-badge public">Live</div>
+                                <div class="project-badge public" data-translate="portfolio_live">En Vivo</div>
                                 <div class="project-links">
                                     <a href="https://www.constructoreslogar.com" target="_blank" class="btn-view">
-                                        <i class="fas fa-external-link-alt"></i> Visit
+                                        <i class="fas fa-external-link-alt"></i> <span data-translate="portfolio_visit">Visitar</span>
                                     </a>
                                     <button class="btn-detail" onclick="openProjectModal('logar')">
-                                        <i class="fas fa-info-circle"></i> Details
+                                        <i class="fas fa-info-circle"></i> <span data-translate="portfolio_details">Detalles</span>
                                     </button>
                                 </div>
                             </div>
@@ -442,15 +448,15 @@
                 </div>
 
                 <!-- Example Project - SOFTREK Tourism -->
-                <div class="portfolio-item" data-category="web fullstack">
+                <div class="portfolio-item" data-category="web fullstack" data-project-id="softrek">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="images/desktop-1245714_1920.jpg" alt="SOFTREK Tourism Platform">
                             <div class="project-overlay">
-                                <div class="project-badge private">Private</div>
+                                <div class="project-badge private" data-translate="portfolio_private">Privado</div>
                                 <div class="project-links">
                                     <button class="btn-detail" onclick="openProjectModal('softrek')">
-                                        <i class="fas fa-info-circle"></i> Details
+                                        <i class="fas fa-info-circle"></i> <span data-translate="portfolio_details">Detalles</span>
                                     </button>
                                 </div>
                             </div>
@@ -483,18 +489,18 @@
                 </div>
 
                 <!-- Project Suite - Volksureste E-commerce System -->
-                <div class="portfolio-item project-suite" data-category="ecommerce fullstack">
+                <div class="portfolio-item project-suite" data-category="ecommerce fullstack" data-project-id="volksureste">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="images/volksureste/home.jpg" alt="Volksureste E-commerce System">
                             <div class="project-overlay">
-                                <div class="project-badge public">Live</div>
+                                <div class="project-badge public" data-translate="portfolio_live">En Vivo</div>
                                 <div class="project-links">
                                     <a href="https://volksureste.com" target="_blank" class="btn-view">
-                                        <i class="fas fa-external-link-alt"></i> Visit
+                                        <i class="fas fa-external-link-alt"></i> <span data-translate="portfolio_visit">Visitar</span>
                                     </a>
                                     <button class="btn-detail" onclick="openProjectModal('volksureste')">
-                                        <i class="fas fa-info-circle"></i> Details
+                                        <i class="fas fa-info-circle"></i> <span data-translate="portfolio_details">Detalles</span>
                                     </button>
                                 </div>
                             </div>
@@ -525,15 +531,15 @@
                 </div>
 
                 <!-- Project - Violetera Restaurant POS System -->
-                <div class="portfolio-item project-suite" data-category="web fullstack">
+                <div class="portfolio-item project-suite" data-category="web fullstack" data-project-id="violetera">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="images/violetera/home.jpg" alt="Sistema POS Violetera">
                             <div class="project-overlay">
-                                <div class="project-badge private">Private</div>
+                                <div class="project-badge private" data-translate="portfolio_private">Privado</div>
                                 <div class="project-links">
                                     <button class="btn-detail" onclick="openProjectModal('violetera')">
-                                        <i class="fas fa-info-circle"></i> Details
+                                        <i class="fas fa-info-circle"></i> <span data-translate="portfolio_details">Detalles</span>
                                     </button>
                                 </div>
                             </div>
@@ -568,15 +574,15 @@
                 </div>
 
                 <!-- Project - Smart-e Life MLM/POS System -->
-                <div class="portfolio-item project-suite" data-category="web fullstack ecommerce">
+                <div class="portfolio-item project-suite" data-category="web fullstack ecommerce" data-project-id="smartelife">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="images/smartelife/home.jpg" alt="Smart-e Life MLM System">
                             <div class="project-overlay">
-                                <div class="project-badge private">Private</div>
+                                <div class="project-badge private" data-translate="portfolio_private">Privado</div>
                                 <div class="project-links">
                                     <button class="btn-detail" onclick="openProjectModal('smartelife')">
-                                        <i class="fas fa-info-circle"></i> Details
+                                        <i class="fas fa-info-circle"></i> <span data-translate="portfolio_details">Detalles</span>
                                     </button>
                                 </div>
                             </div>
@@ -610,15 +616,15 @@
                 </div>
 
                 <!-- Project - Sistema POS Llantamax -->
-                <div class="portfolio-item" data-category="web fullstack">
+                <div class="portfolio-item" data-category="web fullstack" data-project-id="llantamax">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="images/llantamax/home.jpg" alt="Sistema POS Llantamax">
                             <div class="project-overlay">
-                                <div class="project-badge private">Private</div>
+                                <div class="project-badge private" data-translate="portfolio_private">Privado</div>
                                 <div class="project-links">
                                     <button class="btn-detail" onclick="openProjectModal('llantamax')">
-                                        <i class="fas fa-info-circle"></i> Details
+                                        <i class="fas fa-info-circle"></i> <span data-translate="portfolio_details">Detalles</span>
                                     </button>
                                 </div>
                             </div>
@@ -652,18 +658,18 @@
                 </div>
 
                 <!-- Project - FitLife Gym Management System -->
-                <div class="portfolio-item project-suite" data-category="web fullstack">
+                <div class="portfolio-item project-suite" data-category="web fullstack" data-project-id="fitlife">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="images/fitlife/home.jpg" alt="FitLife Gym Management">
                             <div class="project-overlay">
-                                <div class="project-badge public">Live</div>
+                                <div class="project-badge public" data-translate="portfolio_live">En Vivo</div>
                                 <div class="project-links">
                                     <a href="https://www.fitlife.mx/" target="_blank" class="btn-view">
-                                        <i class="fas fa-external-link-alt"></i> Visit
+                                        <i class="fas fa-external-link-alt"></i> <span data-translate="portfolio_visit">Visitar</span>
                                     </a>
                                     <button class="btn-detail" onclick="openProjectModal('fitlife')">
-                                        <i class="fas fa-info-circle"></i> Details
+                                        <i class="fas fa-info-circle"></i> <span data-translate="portfolio_details">Detalles</span>
                                     </button>
                                 </div>
                             </div>
@@ -697,15 +703,15 @@
                 </div>
 
                 <!-- Project - Web Hosting & Server Management Services -->
-                <div class="portfolio-item" data-category="web api">
+                <div class="portfolio-item" data-category="web api" data-project-id="hosting-services">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="images/server.jpg" alt="Web Hosting Services">
                             <div class="project-overlay">
-                                <div class="project-badge public">Active</div>
+                                <div class="project-badge public" data-translate="portfolio_active">Activo</div>
                                 <div class="project-links">
                                     <button class="btn-detail" onclick="openProjectModal('hosting-services')">
-                                        <i class="fas fa-info-circle"></i> Details
+                                        <i class="fas fa-info-circle"></i> <span data-translate="portfolio_details">Detalles</span>
                                     </button>
                                 </div>
                             </div>
@@ -755,62 +761,62 @@
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 class="title" data-translate="contact_title">Contáctame</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Get in Touch</div>
+                    <div class="text" data-translate="contact_get_in_touch">Ponte en Contacto</div>
                     <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p> -->
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
                             <div class="info">
-                                <div class="head">Name</div>
+                                <div class="head" data-translate="contact_name">Nombre</div>
                                 <div class="sub-title">Pedro Alberto Xool Nic</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
-                                <div class="head">Address</div>
+                                <div class="head" data-translate="contact_address">Dirección</div>
                                 <div class="sub-title">Mérida, Yucatán.</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
-                                <div class="head">Email</div>
+                                <div class="head" data-translate="contact_email">Email</div>
                                 <div class="sub-title">pedroxool49@gmail.com</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fab fa-whatsapp"></i>
                             <div class="info">
-                                <div class="head">WhatsApp</div>
+                                <div class="head" data-translate="contact_whatsapp">WhatsApp</div>
                                 <div class="sub-title">+52 999 970 0581</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="column right">
-                    <div class="text">Message me</div>
+                    <div class="text" data-translate="contact_message_me">Envíame un Mensaje</div>
                     <form id="contact-form" onsubmit="sendWhatsAppMessage(event)">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                                <input type="text" name="name" id="full-name" placeholder="Nombre y Apellido" data-translate="contact_form_name" required="">
                             </div>
                             <div class="field email">
-                                <input type="email" name="email" id="email-address" placeholder="email@domain.tld" required="">
+                                <input type="email" name="email" id="email-address" placeholder="email@dominio.com" data-translate="contact_form_email" required="">
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                            <input type="text" name="subject" id="subject" placeholder="Asunto" data-translate="contact_form_subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" name="message" id="message" placeholder="Message" required=""></textarea>
+                            <textarea cols="30" rows="10" name="message" id="message" placeholder="Mensaje" data-translate="contact_form_message" required=""></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">
-                                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                                <i class="fab fa-whatsapp"></i> <span data-translate="contact_send">Enviar por WhatsApp</span>
                             </button>
                         </div>
                         </div>
@@ -824,7 +830,7 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="https://www.linkedin.com/in/pedro-xool-nic">Pedro Xool</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+        <span><span data-translate="footer_created">Creado por</span> <a href="https://www.linkedin.com/in/pedro-xool-nic">Pedro Xool</a> | <span class="far fa-copyright"></span> <span data-translate="footer_rights">2021 Todos los derechos reservados.</span></span>
     </footer>
 
     <script src="script.js"></script>
