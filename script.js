@@ -797,3 +797,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+// WhatsApp contact form function
+function sendWhatsAppMessage(event) {
+    event.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('full-name').value;
+    const email = document.getElementById('email-address').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    // Build WhatsApp message
+    const whatsappMessage = `*Nuevo mensaje del portafolio*%0A%0A` +
+        `*Nombre:* ${name}%0A` +
+        `*Email:* ${email}%0A` +
+        `*Asunto:* ${subject}%0A%0A` +
+        `*Mensaje:*%0A${message}`;
+    
+    // WhatsApp phone number (include country code, e.g., 52 for Mexico)
+    const phoneNumber = '529999700581';
+    
+    // Build WhatsApp URL
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage.replace(/%0A/g, '\n'))}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappURL, '_blank');
+    
+    // Optional: Reset form after sending
+    // document.getElementById('contact-form').reset();
+}

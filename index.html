@@ -81,27 +81,44 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Pedro Xool and I'm a <span class="typing-2"></span></div>
-                    <p>Joven egresado del Instituto Tecnológico de 
-                        Mérida de la carrera de Ingeniería en Sistemas 
-                        Computacionales.
+                    <p>
+                        Ingeniero en Sistemas Computacionales egresado del <span style="font-weight: bold;">Instituto Tecnológico de Mérida</span>, 
+                        con más de <span style="font-weight: bold;">6 años de experiencia</span> especializado en desarrollo web full-stack, 
+                        arquitectura de aplicaciones empresariales y administración de infraestructura cloud.
                     </p>
                     <p>
-                        Actualmente laborando en <span style="font-weight: bold;">Grupo CSI - Buzzword</span>
-                        modalidad remota como desarrollador Frontend Vue.
+                        Actualmente me desempeño como <span style="font-weight: bold;">Full Stack Developer</span> en 
+                        <span style="font-weight: bold;">Grupo CSI - Buzzword</span> (modalidad remota), donde desarrollo aplicaciones 
+                        empresariales con <span style="font-weight: bold;">Vue 3, Nuxt, Laravel y arquitecturas modernas</span>. Mi expertise 
+                        abarca desde sistemas de gestión complejos hasta plataformas e-commerce y soluciones SaaS.
                     </p>
                     <p>
-                        Anteriormente laborando en <span style="font-weight: bold;">SOFTREK</span>
-                        como desarrollador web Full Stack, relacionado en el ramo turistico. 
-                        Anterior trabajo <span style="font-weight: bold;">ISI SURESTE</span>  
-                        como WEB MASTER administrando Hosting VPS y a cargo de 11 sitios web entre ellos, 5 tiendas online, así 
-                        como instructor de talleres de informática para la 
-                        capacitación del trabajo desde agosto del 2019.
+                        He liderado el desarrollo de <span style="font-weight: bold;">sistemas críticos de negocio</span> incluyendo: 
+                        plataformas de Marketing Multinivel (MLM) con gestión de 6 niveles y procesamiento de comisiones automáticas, 
+                        sistemas POS para restaurantes con WebSockets en tiempo real, plataformas de gestión para gimnasios con integración 
+                        de pagos (OpenPay) y correos transaccionales, e-commerce multi-sucursal con gestión de inventario y múltiples 
+                        pasarelas de pago, y sistemas de control de inventario para cadenas comerciales.
                     </p>
                     <p>
-                        Participación como líder de departamento de TI en <span style="font-weight: bold;">Constructores Logar S.A. de C.V.</span>
+                        Mi experiencia profesional incluye: <span style="font-weight: bold;">SOFTREK</span> como Full Stack Developer 
+                        en el sector turístico desarrollando sistemas VoIP con Websockets y buscadores optimizados de aeropuertos internacionales; 
+                        <span style="font-weight: bold;">ISI SURESTE</span> como Web Master administrando infraestructura VPS CentOS Linux, 
+                        gestionando 11 sitios web (incluyendo 5 tiendas online), APIs REST, sistemas POS, y liderando capacitaciones técnicas; 
+                        <span style="font-weight: bold;">Constructores Logar S.A. de C.V.</span> como Líder del Departamento de TI, desarrollando 
+                        infraestructura de red, sistemas de gestión de proyectos y brindando soporte técnico integral.
                     </p>
-                    <p>Participación como joven emprendedor e incubado por la empresa <span style="font-weight: bold;">ENGEN</span>, socio accionista de la empresa Mesebot.</p>
-                    <!-- <p>Experiencia en Sistemas computacionales y telecomunicaciones, experiencia en la industria 4.0.</p> -->
+                    <p>
+                        Como emprendedor, fui incubado por <span style="font-weight: bold;">ENGEN</span> y soy socio accionista de 
+                        <span style="font-weight: bold;">Mesebot</span>. Adicionalmente, ofrezco servicios profesionales de 
+                        <span style="font-weight: bold;">hosting, administración de servidores, gestión de dominios y correos corporativos</span>, 
+                        con experiencia en cPanel/WHM, configuración de SSL/TLS, backups automatizados y optimización de rendimiento.
+                    </p>
+                    <p>
+                        <span style="font-weight: bold;">Stack tecnológico dominado:</span> Vue 3 (Composition API), Quasar Framework, 
+                        Pinia, Tailwind CSS, Laravel, MySQL/PostgreSQL, WebSockets, API REST, JWT, OpenPay, Webhooks, Docker, Git, 
+                        y administración de servidores Linux. Especializado en arquitecturas modernas, diseño de APIs escalables, 
+                        integración de servicios de terceros y soluciones en tiempo real.
+                    </p>
                     
                     <a href="PEDROALBERTOXOOLNIC_CV.pdf" download="Pedro_Xool_Nic_CV.pdf">Download CV</a>
                 </div>
@@ -765,28 +782,37 @@
                                 <div class="sub-title">pedroxool49@gmail.com</div>
                             </div>
                         </div>
+                        <div class="row">
+                            <i class="fab fa-whatsapp"></i>
+                            <div class="info">
+                                <div class="head">WhatsApp</div>
+                                <div class="sub-title">+52 999 970 0581</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="https://formspree.io/f/mknkqjdw" method="POST">
+                    <form id="contact-form" onsubmit="sendWhatsAppMessage(event)">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
                             </div>
                             <div class="field email">
-                                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                                <input type="email" name="email" id="email-address" placeholder="email@domain.tld" required="">
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
                             <textarea cols="30" rows="10" name="message" id="message" placeholder="Message" required=""></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Send message</button>
-                            <!-- <button type="submit" value="Send message"> -->
+                            <button type="submit">
+                                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                            </button>
+                        </div>
                         </div>
                     </form>
 
